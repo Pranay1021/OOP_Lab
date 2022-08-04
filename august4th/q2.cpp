@@ -11,7 +11,7 @@ void search(int x,int arr[],int y){
         }
 
     }
-    cout<<"The element is absent .";
+   
 }
 
 int main(){
