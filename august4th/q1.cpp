@@ -1,32 +1,37 @@
 //The sum of series
 #include <iostream>
 using namespace std;
-int fact(int x){
-    int product=1;
-    for(int i=1;i<=x;i++){
-        product=product*1;
+float fact(float x){
+    float product=1;
+    for(float i=1;i<=x;i++){
+        product=product*i;
     }
-    cout<<"The factorial of "<<x<<"is "<<product<<endl;
+    // cout<<"The factorial of "<<x<<"is "<<product<<endl;
     return product;
 }
-int pow(int y,int z){
-    int power=1;
-    for(int i=1;i<=y;i++){
+float pow(float y,float z){
+    float power=1;
+    for(float i=1;i<=y;i++){
         power=power*z;
     }
-    cout<<"The value of "<<y<<" to the power "<<z<<" is "<<power<<endl;
+    // cout<<"The value of "<<y<<" to the power "<<z<<" is "<<power<<endl;
     return power;
 }
+float result(float a,float b){
+    float sum=1;
+    for (float i=2;i<=b;i++){
+        sum=sum+(pow(i,a)/fact(i));    }
+        return (sum);
+}
 int main(){
-    int a,b,c,d;
+    float a,b,c,d;
     float answer;
-    cout<<"a/1!+a^2/2!+.......a^n/n! "<<endl;
+    cout<<"1+a^2/2!+.......a^n/n! "<<endl;
     cout<<"Enter the value of a in above expression"<<endl;
     cin>>a;
     cout<<"Enter the power of a/factorial in denominator: "<<endl;
     cin>>b;
-    c=fact(b);
-    d=pow(a,b);
-    answer=d/a;
+    answer=result(a,b);
     cout<<"and the sum of the series is "<<answer<<endl;
+    return 0;
 }
