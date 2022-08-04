@@ -7,10 +7,13 @@ void search(int x,int arr[],int y){
             cout<<"The element is present at position"<<i;
         }
         else{
-            cout<<"The element is absent";
+            continue;
         }
+
     }
+    cout<<"The element is absent .";
 }
+
 int main(){
     int n,search1;
     cout<<"Enter the elements in your array :"<<endl;
