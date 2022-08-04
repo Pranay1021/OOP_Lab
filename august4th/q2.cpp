@@ -4,13 +4,14 @@ using namespace std;
 void search(int x,int arr[],int y){
     for(int i=0;i<y;i++){
         if(arr[i]==x){
-            cout<<"The element is present at position"<<i;
+            cout<<"The element is present at position "<<i+1;
+            return;
         }
         else{
             continue;
         }
-
-    }
+       }
+       cout<<"Element is absent ";
    
 }
 

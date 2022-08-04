@@ -22,7 +22,7 @@ int main(){
     cout<<"Enter the rollno : "<<endl;
     cin>>stud.rollno;
     cout<<"Enter the name : "<<endl;
-    getline(cin,stud.name);
+    cin>>stud.name;
     cout<<"Enter the marks : "<<endl;
     cin>>stud.marks;
     display(stud);
