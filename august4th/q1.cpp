@@ -32,6 +32,6 @@ int main(){
     cout<<"Enter the power of a/factorial in denominator: "<<endl;
     cin>>b;
     answer=result(a,b);
-    cout<<"and the sum of the series is "<<answer<<endl;
+    cout<<"the sum of the series is "<<answer<<endl;
     return 0;
 }
