@@ -13,8 +13,14 @@ public:
     void display_data();
     void gradecalc();
     int sn;
+    void search(int n);
 
 };
+void student::search(int n){
+    if(roll==n){
+        cout<<sn<<"\t"<<roll<<"\t\t"<<name<<"\t\t"<<m[0]<<"\t\t"<<m[1]<<"\t\t"<<m[2]<<"\t\t"<<sum<<"\t\t"<<grade;
+    }
+}
  void display_bar(){
         for(int i=0;i<60;i++)
         {
@@ -69,7 +75,7 @@ int main(){
     cout<<"\n";
     display_bar();
     cout<<"\n";
-    cout<<"SN"<<"\t"<<"Roll.No"<<"\t\t"<<"Name"<<"\t\t"<<"m1"<<"\t\t"<<"m2"<<"\t\t"<<"m3"<<"\t\t"<<"total"<<"\t\t"<<"grade";
+    cout<<"SN"<<"\t"<<"Roll.No"<<"\t\t"<<"Name"<<"\t\t"<<"m1"<<"\t\t"<<"m2"<<"\t\t"<<"m3"<<"\t\t"<<"total"<<"\t"<<"grade";
     cout<<"\n";
     for(int i=0;i<5;i++){
         s[i].sn=i+1;
@@ -77,8 +83,11 @@ int main(){
     }
     cout<<"\n\n";
     int n;
-    cout<<"Enter the SN of student you want to display:\n";
+    cout<<"Enter the roll no of student you want to display:\n";
     cin>>n;
-    s[n-1].display_data();
+    cout<<"SN"<<"\t"<<"Roll.No"<<"\t\t"<<"Name"<<"\t\t"<<"m1"<<"\t\t"<<"m2"<<"\t\t"<<"m3"<<"\t\t"<<"total"<<"\t"<<"grade\n";
+    for(int i=0;i<5;i++){
+        s[i].search(n);
+    }
     cout<<"\n\n";
 }
