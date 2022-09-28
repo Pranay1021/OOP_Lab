@@ -85,9 +85,12 @@ int main(){
     int n;
     cout<<"Enter the roll no of student you want to display:\n";
     cin>>n;
-    cout<<"SN"<<"\t"<<"Roll.No"<<"\t\t"<<"Name"<<"\t\t"<<"m1"<<"\t\t"<<"m2"<<"\t\t"<<"m3"<<"\t\t"<<"total"<<"\t"<<"grade\n";
+    display_bar();
+    cout<<"SN"<<"\t"<<"Roll.No"<<"\t\t"<<"Name"<<"\t\t"<<"m1"<<"\t\t"<<"m2"<<"\t\t"<<"m3"<<"\t\t"<<"total"<<"\t\t"<<"grade\n";
+    display_bar();
     for(int i=0;i<5;i++){
         s[i].search(n);
     }
     cout<<"\n\n";
+    display_bar();
 }
