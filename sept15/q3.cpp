@@ -15,7 +15,7 @@ class PC{
         cin>>mark;
     }
     void display(){
-        cout<<"The name of the student is "<<name<<"roll no is"<<roll<<"mark is "<<mark;
+        cout<<"The name of the student is "<<name<<" roll no is "<<roll<<"mark is "<<mark;
     }
 };
 int main(){
