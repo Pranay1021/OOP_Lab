@@ -9,7 +9,7 @@ class test{
             f=1;
         }
         void read_data(){
-            cout<<"\n Enter a number";
+            cout<<"\nEnter a number";
             cin>>n;
         }
         void display(){
